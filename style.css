@@ -1,0 +1,229 @@
+html {
+    background-color: #4286f4;
+    position: relative;
+    text-align: center;
+
+    font-family: roboto;
+
+}
+
+header {
+    text-align: center;
+    font-size: 50px;
+    font-family: Roboto;
+    color: white;
+
+}
+
+body {
+    position: relative;
+
+}
+
+
+.datasection {
+
+    width: 100%;
+    display: block;
+}
+
+.login {
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    padding: 30px;
+    background-color: #e6eaf2;
+    display: block;
+    width: 30%;
+    text-align: left;
+}
+
+.login legend {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+fieldset {
+    border: 0;
+}
+
+#submit {
+    width: 100%;
+}
+
+button,
+#submit,
+#createAccountButton2,
+#backToLogin,
+#recovery_fp {
+    border-radius: 10px;
+    background-color: #90b8f9;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+
+}
+
+button:hover,
+#submit:hover,
+#createAccountButton2:hover,
+#backToLogin:hover,
+#recovery_fp:hover {
+    background-color: blue;
+}
+
+#createAccountButton2,
+#backToLogin,
+#recovery_fp {
+    width: 100%;
+}
+
+.login h1 {
+    font-size: 17px;
+}
+
+
+
+.createAccount,
+.forgetPassword {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.createAccountContent,
+.forgetPasswordContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid #90b8f9;
+    width: 26%;
+    height: 40%;
+    /*float:center;*/
+    text-align: left;
+
+
+}
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.today_data {
+    text-align: center;
+    font-size: 17px;
+    background: rgba(184, 209, 249, 0.6);
+    left: 0px;
+    width: 50%;
+    border-radius: 20px;
+    position: absolute;
+
+}
+
+.today_data h1 {
+
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Roboto;
+}
+
+.today_data h2 {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Roboto;
+}
+
+.history {
+    background: rgba(184, 209, 249, 0.6);
+    position: absolute;
+    border-radius: 20px;
+    right: 0px;
+    width: 50%;
+
+
+}
+
+.history h1 {
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: roboto;
+
+
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    padding: 12px 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+label {
+
+    color: #6d6f72;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
+    width: 140px;
+}
+
+footer {
+    position: relative;
+}
+
+#enter_todays_data {
+    background-color: yellow;
+    color: black;
+}
+
+#logout {
+    background-color: red;
+}
