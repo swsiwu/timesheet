@@ -1,5 +1,6 @@
 # timesheet
 keeping track of your hours worked
+* a project for myself to practice basic php
 
 ## Technical Details
 jQuery, XHR, PHP, JavaScript, CSS, HTML, MySQL, PDO, Google Chart API
