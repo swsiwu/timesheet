@@ -57,14 +57,10 @@
      
      foreach($pdo->query($query) as $row) {
          if ( $row[0] == $username ){
-             //echo "'" . $row[0] . "'' - ''" . $username."'<br>";
-
-             //echo "'" . $row[1] . "'' - ''" . $password."'<br>";
+        
 
              if ( $row[1] == sha1($password) )  {
-                 //echo json_encode( (string)trim($row[0]) == (string)trim($username) );
-               //  print_r( $row[0]);
-                 // print_r( $username);
+              
                  $_SESSION['user'] = $username;
                 
                  $_SESSION['success'] = "ok!";
@@ -83,26 +79,4 @@
  }
 
 
-
-     /*
-//Query Database
-if( $result = mysqli_query("SELECT * FROM timesheet.user WHERE username = '" . mysqli_real_escape( $_POST['username'] )  . "'") ) {
-    //Render Database Result
-    $user = mysqli_assoc( $result );
-    
-    //The User Exists, Check the Password
-    if( $user['password'] == sha1( $_POST['password'] ) ) {
-        
-        //Valid User Authentication, Do Something
-        return true;
-    }
-}
-
-     echo json_encode("User name $username doesn't exist or password is inccorect <br>");
-     return false;
-
-}     
- function HandleError( $message ) {
-     echo json_encode($message);
- }*/
 ?>
