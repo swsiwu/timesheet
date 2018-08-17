@@ -10,7 +10,7 @@ jQuery, XHR, PHP, JavaScript, CSS, HTML, MySQL, PDO, Google Chart API
 [X] sign in <br>
 [X] create account <br>
 [ ] forget account <br>
-[ ] confirmation email <br>
+[ ] confirmation email w/ MailChimp <br>
 
 * Data section:<br>
 [X] total number of absences <br>
