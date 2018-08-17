@@ -1,5 +1,5 @@
 # timesheet
-keeping track of your hours worked
+keeping track of your hours worked <br>
 (a project for myself to practice basic php)
 
 ## Technical Details
