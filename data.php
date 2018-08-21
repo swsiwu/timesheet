@@ -10,6 +10,7 @@ $dates = array();
 $come_time = array();
 $leave_time = array();
 $hours_worked = array();
+$average_hours_worked = 0;
 
 ini_set("display_errors",1);
 error_reporting(-1);
@@ -26,6 +27,7 @@ try {
     
     getNumberOfAbsence($pdo);
     getAttendance($pdo);
+    getAvgHoursWorked($pdo);
 }
 
 catch (PDOException $e){  
@@ -55,8 +57,8 @@ function getAttendance( $pdo ) {
      $username = trim( $_SESSION['user']); 
 
     // calculate/update time difference before getting it
-    // TODO UNCOMMENT THIS!
-    /*
+   
+    
      $stmt = $pdo->prepare("UPDATE " .$username . " SET time_diff=TIMEDIFF(leave_time,come_time)");
      //$stmt->bindParam(':username', $username, PDO::PARAM_STR);
      $stmt->execute();
@@ -73,7 +75,22 @@ function getAttendance( $pdo ) {
          array_push($leave_time, $row["leave_time"]); //TODO WHAT IF IT'S NULL? 
          array_push($hours_worked, $row["time_diff"]);
      }
-     */
+     
+}
+
+function getAvgHoursWorked( $pdo ) {
+    global $average_hours_worked;
+
+    $username = trim( $_SESSION['user']);
+
+    $stmt = $pdo->prepare("SELECT avg_hours_worked from users where username=:username");
+    $stmt->bindParam(':username', $username, PDO::PARAM_STR);   
+    $stmt->execute();
+
+    $result = $stmt->fetchAll();
+    foreach( $result as $row) {
+        $average_hours_worked = $row[ "avg_hours_worked"];
+    }
 }
 ?>
 
@@ -209,8 +226,12 @@ function getAttendance( $pdo ) {
         <div class="datasection" id='dataSection'>
             <div class="today_data">
                 <h1>Statistic:</h1>
-                <h2><span style="font-weight:bold">Average Working Hours:</span></h2>
-
+                <h2><span style="font-weight:bold">Average Working Hours:</span> <span style="color:blue; font-weight:bold">
+                <?php
+                  global $average_hours_worked;
+                  echo  $average_hours_worked;
+                ?>
+                </span></h2>
 
                 <div aria-label="graphs">
                     <div aria-label="attendance chart">
