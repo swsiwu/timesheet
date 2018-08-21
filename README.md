@@ -17,5 +17,8 @@ jQuery, XHR, PHP, JavaScript, CSS, HTML, MySQL, PDO, Google Chart API
 [X] Calendar chart of attendance w/ Google Chart <br>
 [X] Pie chart of hours worked w/ Google Chart <br>
 [ ] Connect charts with database (fetch data from database) <br>
+[ ] Display Average hours worked <br>
+
+
 
 
