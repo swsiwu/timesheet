@@ -20,7 +20,7 @@ jQuery, XHR, PHP, JavaScript, CSS, HTML, MySQL, PDO, Google Chart API
 [X] Display Average hours worked <br>
 [ ] Display History chart <br>
 
-## Demo picture of features so far
+## Demo pictures of the finished features
 ![Alt text](/signin.png?raw=true "Demo") <br>
 ![Alt text](/createAccount.png?raw=true "Demo") <br>
 ![Alt text](/data.png?raw=true "Demo")
