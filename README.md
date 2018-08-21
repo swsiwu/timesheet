@@ -21,6 +21,8 @@ jQuery, XHR, PHP, JavaScript, CSS, HTML, MySQL, PDO, Google Chart API
 [ ] Display History chart <br>
 
 ## Demo picture of features so far
-![Alt text](/demo.png?raw=true "Demo")
+![Alt text](/signin.png?raw=true "Demo") <br>
+![Alt text](/createAccount.png?raw=true "Demo") <br>
+![Alt text](/data.png?raw=true "Demo")
 
 
